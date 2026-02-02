@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenBrunei - Places to Visit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <p class="eyebrow">OpenBrunei</p>
+      <h1>Discover Brunei's best places to stay, eat, and explore.</h1>
+      <p class="subtitle">
+        A curated guide for visitors, tourists, and locals featuring map views, hidden gems,
+        and trusted recommendations.
+      </p>
+    </div>
+    <div class="header-actions">
+      <button class="primary">Start exploring</button>
+      <button class="ghost">Submit a place</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="map-panel" aria-labelledby="map-title">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Map view</p>
+          <h2 id="map-title">MapCN-powered overview</h2>
+        </div>
+        <div class="legend">
+          <span class="legend-item hotel">Hotels</span>
+          <span class="legend-item restaurant">Restaurants</span>
+          <span class="legend-item cafe">Cafes</span>
+        </div>
+      </div>
+      <div id="map" class="map-canvas" role="img" aria-label="Map view of Brunei"></div>
+      <p id="map-status" class="map-status">
+        Loading MapCN integration&hellip;
+      </p>
+    </section>
+
+    <section class="recommendations" aria-labelledby="rec-title">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Recommendations</p>
+          <h2 id="rec-title">Hand-picked local favorites</h2>
+        </div>
+        <p class="subtitle">A quick shortlist to get you started.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Hotels</h3>
+          <ul>
+            <li>Empire Hotel &amp; Country Club</li>
+            <li>The Rizqun International Hotel</li>
+            <li>Radisson Hotel Brunei Darussalam</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Restaurants</h3>
+          <ul>
+            <li>Kaizen Sushi</li>
+            <li>Energy Kitchen</li>
+            <li>Seri Damai Restaurant</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cafes</h3>
+          <ul>
+            <li>Three Light Coffee</li>
+            <li>Roasted Sip</li>
+            <li>Piccolo Cafe</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="highlights">
+        <article>
+          <h3>Top sights</h3>
+          <p>Omar Ali Saifuddien Mosque, Kampong Ayer, Jerudong Park.</p>
+        </article>
+        <article>
+          <h3>Local tips</h3>
+          <p>Plan around prayer times and bring light layers for afternoon showers.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>OpenBrunei &middot; Built for explorers in Brunei Darussalam.</p>
+  </footer>
+
+  <script src="https://map.cn/api.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
