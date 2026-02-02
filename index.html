@@ -1,3 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenBrunei</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +47,15 @@
           <span class="legend-item cafe">Cafes</span>
         </div>
       </div>
+      <aside class="places-panel" aria-label="Place categories">
+        <h3>Categories</h3>
+        <ul class="places-list">
+          <li><button class="filter hotel" data-category="hotel">Hotels</button></li>
+          <li><button class="filter restaurant" data-category="restaurant">Restaurants</button></li>
+          <li><button class="filter cafe" data-category="cafe">Cafes</button></li>
+          <li><button class="filter all" data-category="all">Show all</button></li>
+        </ul>
+      </aside>
       <div id="map" class="map-canvas" role="img" aria-label="Map view of Brunei"></div>
       <p id="map-status" class="map-status">
         Loading MapCN integration&hellip;
