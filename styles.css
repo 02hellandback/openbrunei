@@ -128,6 +128,10 @@ button:active {
   color: rgba(16, 24, 40, 0.18);
 }
 
+.map-canvas.has-map::after {
+  content: none;
+}
+
 .map-status {
   margin: 12px 0 0;
   color: var(--muted);
